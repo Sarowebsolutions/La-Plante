@@ -1,0 +1,7 @@
+{
+  "name": "La Plante Fitness - Elite Performance",
+  "description": "A premium, high-performance fitness coaching platform specializing in clinical exercise science and bespoke training programs.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
