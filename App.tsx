@@ -1,41 +1,26 @@
-
-import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Coach from './components/Coach';
-import Programs from './components/Programs';
-import Testimonials from './components/Testimonials';
-import Results from './components/Results';
-import FAQ from './components/FAQ';
-import Location from './components/Location';
-import Footer from './components/Footer';
+import React from 'react';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import Coach from './components/Coach.tsx';
+import Programs from './components/Programs.tsx';
+import Testimonials from './components/Testimonials.tsx';
+import Results from './components/Results.tsx';
+import FAQ from './components/FAQ.tsx';
+import Location from './components/Location.tsx';
+import Footer from './components/Footer.tsx';
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-obsidian text-white overflow-x-hidden selection:bg-lime selection:text-black">
       <Navbar />
       <main>
-        <section id="hero">
-          <Hero />
-        </section>
-        <section id="philosophy">
-          <Coach />
-        </section>
-        <section id="programs">
-          <Programs />
-        </section>
-        <section id="testimonials">
-          <Testimonials />
-        </section>
-        <section id="results">
-          <Results />
-        </section>
-        <section id="faq">
-          <FAQ />
-        </section>
-        <section id="location">
-          <Location />
-        </section>
+        <Hero />
+        <Coach />
+        <Programs />
+        <Testimonials />
+        <Results />
+        <FAQ />
+        <Location />
       </main>
       <Footer />
     </div>

@@ -44,6 +44,8 @@
             background-color: #0A0A0A;
             color: #FFFFFF;
             font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
         }
         .material-symbols-outlined {
             font-family: 'Material Symbols Outlined';
@@ -67,10 +69,6 @@
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        .text-outline {
-            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-            color: transparent;
-        }
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -81,29 +79,28 @@
             background: #CCFF00;
             border-radius: 4px;
         }
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
         }
-        .animate-fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
-<script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@19.0.0",
     "react-dom": "https://esm.sh/react-dom@19.0.0",
     "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
   }
 }
 </script>
 </head>
 <body>
     <div id="root"></div>
-    <!-- Entry point script -->
     <script type="module" src="./index.tsx"></script>
 </body>
 </html>

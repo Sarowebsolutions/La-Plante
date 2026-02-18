@@ -35,7 +35,7 @@ const Results: React.FC = () => {
             <img 
               alt="Transformation Before" 
               className="absolute inset-0 w-full h-full object-cover grayscale" 
-              src="https://images.lucidapp.com/lucidspark/e05b6305-6453-48b4-8395-8854897f7762/image.png"
+              src="https://scontent.fabv2-1.fna.fbcdn.net/v/t39.30808-6/635149789_939100675233272_163090467928782536_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ju6SRs9_9rcQ7kNvwFXEW_q&_nc_oc=Adl__xXJHRgHSUPRBw_rHsBoM-HgAezzuT_a2IMBpOBQrHEtjqE6FyMjeXulYz37UTo&_nc_zt=23&_nc_ht=scontent.fabv2-1.fna&_nc_gid=s1ZILulf7bTAEiuO2aNRFg&oh=00_AfuUz0qaYdZp4yRGIzG7H2w7-K3Cd8nLgSNQxst_6wkY-g&oe=699B9C24"
             />
             {/* After (Top with clip) */}
             <div 
@@ -45,7 +45,7 @@ const Results: React.FC = () => {
               <img 
                 alt="Transformation After" 
                 className="absolute inset-0 w-full h-full object-cover" 
-                src="https://images.lucidapp.com/lucidspark/3c3866b1-6a08-4137-b957-611267868350/image.png"
+                src="https://scontent.fabv2-2.fna.fbcdn.net/v/t39.30808-6/636772493_939100671899939_1238738381790807869_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=iYfSaD2qke0Q7kNvwGawevO&_nc_oc=AdmTLVxddGoaIlv81p2_ekGCNsBajJmNz4KOvcImNPO5rx8dIEJ55dv7tbIaJKM0ZZo&_nc_zt=23&_nc_ht=scontent.fabv2-2.fna&_nc_gid=MqmdLfkXZbRAVswW_dTVEA&oh=00_AfvL0Csw4P7P3BDWGz2rvDaOXMz2ZmRvpaHB9QK-SvDQAA&oe=699B9C41"
               />
             </div>
             

@@ -12,7 +12,7 @@ const Coach: React.FC = () => {
               <img 
                 alt="Justin La Plante - Founder & Head Coach" 
                 className="rounded-[2.5rem] grayscale w-full max-w-[500px] aspect-[4/5] object-cover shadow-2xl transition-all duration-700 group-hover:grayscale-0 border border-white/10" 
-                src="https://images.squarespace-cdn.com/content/v1/51b14298e4b09b0b63304407/1591825167812-07H6E0X3Q9P6V9Y9P3Y3/Justin+La+Plante.jpg"
+                src="https://images.squarespace-cdn.com/content/v1/68af405d3f98a47a7e179287/f6bda766-22af-4f15-99a7-a36005fe54b6/2021+1+2+Justin+L+Headshot.jpg?format=1000w"
               />
               <div className="absolute -bottom-6 -right-6 glass-card p-6 rounded-3xl hidden md:block">
                 <p className="text-lime font-bold text-2xl font-grotesk">15+</p>
