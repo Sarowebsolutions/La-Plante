@@ -1,5 +1,4 @@
-
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 
 const Results: React.FC = () => {
   const [sliderPos, setSliderPos] = useState(50);
@@ -14,7 +13,7 @@ const Results: React.FC = () => {
   };
 
   return (
-    <section className="py-24 md:py-40 bg-black">
+    <section id="results" className="py-24 md:py-40 bg-black">
       <div className="max-w-7xl mx-auto px-6 md:px-20">
         <div className="text-center mb-16 md:mb-20">
           <span className="text-lime font-bold tracking-[0.5em] uppercase text-xs mb-6 block">Real Results</span>
@@ -27,15 +26,16 @@ const Results: React.FC = () => {
           {/* Slider */}
           <div 
             ref={sliderRef}
-            className="relative aspect-[4/3] md:aspect-video rounded-[2rem] md:rounded-[2.5rem] overflow-hidden cursor-ew-resize group shadow-2xl shadow-black/80"
+            className="relative aspect-square md:aspect-video rounded-[2rem] md:rounded-[2.5rem] overflow-hidden cursor-ew-resize group shadow-2xl shadow-black/80"
             onMouseMove={handleMove}
             onTouchMove={handleMove}
+            onMouseDown={(e) => e.preventDefault()}
           >
             {/* Before (Bottom) */}
             <img 
               alt="Transformation Before" 
               className="absolute inset-0 w-full h-full object-cover grayscale" 
-              src="https://scontent.fabv2-1.fna.fbcdn.net/v/t39.30808-6/635149789_939100675233272_163090467928782536_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ju6SRs9_9rcQ7kNvwFXEW_q&_nc_oc=Adl__xXJHRgHSUPRBw_rHsBoM-HgAezzuT_a2IMBpOBQrHEtjqE6FyMjeXulYz37UTo&_nc_zt=23&_nc_ht=scontent.fabv2-1.fna&_nc_gid=s1ZILulf7bTAEiuO2aNRFg&oh=00_AfuUz0qaYdZp4yRGIzG7H2w7-K3Cd8nLgSNQxst_6wkY-g&oe=699B9C24"
+              src="https://images.lucidapp.com/lucidspark/e05b6305-6453-48b4-8395-8854897f7762/image.png"
             />
             {/* After (Top with clip) */}
             <div 
@@ -45,7 +45,7 @@ const Results: React.FC = () => {
               <img 
                 alt="Transformation After" 
                 className="absolute inset-0 w-full h-full object-cover" 
-                src="https://scontent.fabv2-2.fna.fbcdn.net/v/t39.30808-6/636772493_939100671899939_1238738381790807869_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=iYfSaD2qke0Q7kNvwGawevO&_nc_oc=AdmTLVxddGoaIlv81p2_ekGCNsBajJmNz4KOvcImNPO5rx8dIEJ55dv7tbIaJKM0ZZo&_nc_zt=23&_nc_ht=scontent.fabv2-2.fna&_nc_gid=kbLTQuvUV8D0JoyljxbNrQ&oh=00_AfsOWNfjqH2g3Js255XnLb5VXLyLvWerJ70DHa64yWpItQ&oe=699B9C41"
+                src="https://images.lucidapp.com/lucidspark/3c3866b1-6a08-4137-b957-611267868350/image.png"
               />
             </div>
             
@@ -55,13 +55,13 @@ const Results: React.FC = () => {
               style={{ left: `${sliderPos}%` }}
             >
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-lime rounded-full flex items-center justify-center text-black font-bold shadow-xl">
-                <span className="material-symbols-outlined">unfold_more</span>
+                <span className="material-symbols-outlined select-none">unfold_more</span>
               </div>
             </div>
 
             {/* Labels */}
-            <div className="absolute bottom-6 left-6 z-30 bg-black/70 backdrop-blur-md px-4 py-2 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold border border-white/10">Before</div>
-            <div className="absolute bottom-6 right-6 z-30 bg-lime text-black px-4 py-2 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold">After</div>
+            <div className="absolute bottom-6 left-6 z-30 bg-black/70 backdrop-blur-md px-4 py-2 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold border border-white/10 select-none">Before</div>
+            <div className="absolute bottom-6 right-6 z-30 bg-lime text-black px-4 py-2 rounded-full text-[9px] uppercase tracking-[0.2em] font-bold select-none">After</div>
           </div>
 
           {/* Text Content */}
@@ -70,7 +70,7 @@ const Results: React.FC = () => {
               12 Weeks: <br className="hidden md:block" />Body Composition Shift
             </h3>
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed font-light">
-              This high-performance executive achieved a 12% reduction in body fat while maintaining lean muscle mass through our Science-Based Hybrid Program. No fad diets, just precision macronutrient timing.
+              This client achieved a drastic reduction in visceral fat while maximizing functional hypertrophy. Our protocols prioritized mechanical tension and metabolic conditioning to create a resilient, elite physique.
             </p>
             <div className="space-y-5">
               {[
